@@ -8,5 +8,6 @@ namespace DinosaursVSRobotsProj
 {
     class Herd
     {
+        //add three Dinosaur objects and assign appropriate values
     }
 }

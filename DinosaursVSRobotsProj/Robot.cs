@@ -10,7 +10,7 @@ namespace DinosaursVSRobotsProj
     {
         //member variables
         string name;
-        double health;
+        string health;
         string powerLevel;
         string Weapon;
         string WeaponType;
@@ -20,9 +20,9 @@ namespace DinosaursVSRobotsProj
         public Robot()
         {
             name = "";
+            health = "";
             powerLevel = "";
             attackPower = "";
-
         }
 
         //member methods
