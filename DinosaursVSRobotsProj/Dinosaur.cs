@@ -24,9 +24,9 @@ namespace DinosaursVSRobotsProj
         }
 
         //member methods
-        public void ChooseDinoType()
+        public void Attack()
         {
-            //make list of Dinosaur types for this
+            //
         }
 
 

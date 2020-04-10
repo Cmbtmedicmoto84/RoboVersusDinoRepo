@@ -9,9 +9,11 @@ namespace DinosaursVSRobotsProj
     class Weapon
     {
         //member variables
-        string Sword;
-        string Mace;
-        string Ranged;
+        string WeaponType;
+        int attackPower;
+        //string Sword;
+        //string Mace;
+        //string Ranged;
 
         //constructor
         public Weapon()

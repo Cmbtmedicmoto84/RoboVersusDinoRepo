@@ -10,26 +10,25 @@ namespace DinosaursVSRobotsProj
     {
         //member variables
         string name;
-        string health;
+        int health;
         string powerLevel;
-        string Weapon;
-        string WeaponType;
-        string attackPower;
+        Weapon weapon; //
+        
 
         //constructor
-        public Robot()
+        public Robot(string name)  
         {
-            name = "";
-            health = "";
+            this.name = name;
+            health = ;
             powerLevel = "";
             attackPower = "";
         }
 
         //member methods
-        public void ChooseRobotName()
-        {
-            Console.WriteLine("Please choose your Robot name: ");
-        }
+                //public void ChooseRobotName()
+                //{
+                //    Console.WriteLine("Please choose your Robot name: ");
+                //}
         public void ChooseRobotWeaponType()
         {
             Console.WriteLine("Please choose a Weapon type: ");
