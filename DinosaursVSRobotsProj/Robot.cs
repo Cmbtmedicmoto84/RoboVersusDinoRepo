@@ -9,19 +9,26 @@ namespace DinosaursVSRobotsProj
     class Robot
     {
         //member variables
-        string name;
+        string robotName;
         int health;
-        string powerLevel;
-        Weapon weapon; //
-        
+        string weaponNameClass;
+        int powerLevel;
+        Weapon weapon;
+
 
         //constructor
-        public Robot(string name)  
+        public Robot(string robotName, int health, int powerLevel)  
         {
-            this.name = name;
-            health = ;
-            powerLevel = "";
-            attackPower = "";
+            this.robotName = robotName;
+            this.health = health;
+            this.powerLevel = powerLevel;
+        }
+        public void PrintRobotSpecs(List<string> name)
+        {
+            foreach(string robotName in name)
+            {
+                Console.WriteLine(name);
+            }
         }
 
         //member methods
@@ -29,9 +36,9 @@ namespace DinosaursVSRobotsProj
                 //{
                 //    Console.WriteLine("Please choose your Robot name: ");
                 //}
-        public void ChooseRobotWeaponType()
+        public void RobotAttack()
         {
-            Console.WriteLine("Please choose a Weapon type: ");
+            
         }
         public void ChooseWeapon()
         {
