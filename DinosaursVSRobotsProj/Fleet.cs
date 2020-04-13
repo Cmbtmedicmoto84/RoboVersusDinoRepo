@@ -12,7 +12,7 @@ namespace DinosaursVSRobotsProj
         public int healthLevel;
         public int powerLevel;
         public int weaponAP;
-        Weapon weapon = new Weapon();
+        //Weapon weapon = new Weapon(); //what is with this line?!?!?!
 
         public Fleet()
         {
