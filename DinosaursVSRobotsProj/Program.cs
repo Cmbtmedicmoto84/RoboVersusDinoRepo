@@ -10,6 +10,8 @@ namespace DinosaursVSRobotsProj
     {
         static void Main(string[] args)
         {
+            //Robot robot = new Robot();
         }
+        
     }
 }

@@ -29,8 +29,8 @@ namespace DinosaursVSRobotsProj
         public void Attack()
         {
             //was not sure if I need to put in a "true" statement for the attack.
-            biteAttack = "";
-            clawAttack = "";
+            biteAttack = true;
+            clawAttack = true;
         }
 
 

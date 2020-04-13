@@ -9,25 +9,28 @@ namespace DinosaursVSRobotsProj
     class Weapon
     {
         //member variables
-        string WeaponType;
+        string weaponType;
         int attackPower;
-        bool swingAttack;
+        string swingAttack;
+
         //string Sword;
         //string Mace;
         //string Ranged;
 
         //constructor
-        public Weapon(string WeaponType, int attackPower)
+        public void GetWeapon()
         {
-            this.WeaponType = WeaponType;
-            this.attackPower = attackPower;
+            string equippedOn;
+            weaponType = "Two Handed Sword";
+            equippedOn = weaponType;
+            return;
         }
 
         //member methods
         public void swingSword()
         {
             //list & possible ifelse statement?
-            swingAttack = true;
+            
         }
     }
 }

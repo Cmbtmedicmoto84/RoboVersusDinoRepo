@@ -10,27 +10,27 @@ namespace DinosaursVSRobotsProj
     {
         //member variables
         //create an attack ability (robot to dino) & (dino to robot)
-        string DinoattackHit; //base off attack power
-        string RobotattackHit; //base off attack power
+        string DinoAttackHit; //base off attack power
+        string RobotAttackHit; //base off attack power
         string UnsuccessfulDinoHit;
         string UnsuccessfulRobotHit;
 
         //constructor
-        public Battlefield()
-        {
-            //attack power levels?  ifelse statement for successful vs unsuccessful hits
-        }
+        //public Battlefield()
+        //{
+        //    //attack power levels?  ifelse statement for successful vs unsuccessful hits
+        //}
 
-        //member methods
-        public void DinoAttackContact()
-        {
-            //amount of damage done, then minus damage recieved for enemy plus ifelse statement for unsuccessful attack
-        }
+        ////member methods
+        //public AttackContact()
+        //{
+        //    //amount of damage done
+        //}
 
-        public void RobotAttackContact()
-        {
-            //amount of damage done, then minus damage recieved for enemy plus ifelse statement for unsuccessful attack
-        }
+        //public AttackMiss()
+        //{
+        //    //amount of damage done, then minus damage recieved for enemy plus ifelse statement for unsuccessful attack
+        //}
 
     }
 }
