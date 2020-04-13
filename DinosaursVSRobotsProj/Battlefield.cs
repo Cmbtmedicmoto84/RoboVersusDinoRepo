@@ -20,7 +20,10 @@ namespace DinosaursVSRobotsProj
         public string UnsuccessfulRobotHit;
 
         //constructor
+        public void Run()
+        {
 
+        }
  
 
         ////member methods

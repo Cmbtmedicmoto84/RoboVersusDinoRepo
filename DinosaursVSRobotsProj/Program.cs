@@ -10,7 +10,8 @@ namespace DinosaursVSRobotsProj
     {
         static void Main(string[] args)
         {
-            
+            Battlefield battlefieldObject = new Battlefield();
+            battlefieldObject.Run();
         }
         
     }
