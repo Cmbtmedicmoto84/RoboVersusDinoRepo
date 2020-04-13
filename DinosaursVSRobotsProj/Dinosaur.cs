@@ -10,17 +10,11 @@ namespace DinosaursVSRobotsProj
     {
         //member variables
         public string dinoType;
-        public int healthLevel;
-        public int energyLevel;
-        public int attackPower;
 
         //constructor
-        public Dinosaur()
+        public Dinosaur(string dinoType)
         {
             dinoType = "Velociraptor";
-            healthLevel = 100;
-            energyLevel = 100;
-            attackPower = 60;
         }
     }
 }
