@@ -13,6 +13,8 @@ namespace DinosaursVSRobotsProj
         int healthLevel;
         int energyLevel;
         int attackPower;
+        bool biteAttack;
+        bool clawAttack;
 
         //constructor
         public Dinosaur(string DinoType, int healthLevel, int energyLevel)
@@ -26,7 +28,9 @@ namespace DinosaursVSRobotsProj
         //member methods
         public void Attack()
         {
-            //
+            //was not sure if I need to put in a "true" statement for the attack.
+            biteAttack = "";
+            clawAttack = "";
         }
 
 

@@ -23,7 +23,7 @@ namespace DinosaursVSRobotsProj
             this.health = health;
             this.powerLevel = powerLevel;
         }
-        public void PrintRobotSpecs(List<string> name)
+        public string PrintRobotSpecs(List<string> name)
         {
             foreach(string robotName in name)
             {
@@ -36,15 +36,15 @@ namespace DinosaursVSRobotsProj
                 //{
                 //    Console.WriteLine("Please choose your Robot name: ");
                 //}
-        public void RobotAttack()
-        {
+        //public void RobotAttack()
+        //{
             
-        }
-        public void ChooseWeapon()
-        {
-            //could add it to method above in ifelse statement?? with lists of weapon & weapon type
-            Console.WriteLine("Please choose a Weapon: ");
-        }
+        //}
+        //public void ChooseWeapon()
+        //{
+        //    //could add it to method above in ifelse statement?? with lists of weapon & weapon type
+        //    Console.WriteLine("Please choose a Weapon: ");
+        //}
 
     }
 }
