@@ -9,30 +9,18 @@ namespace DinosaursVSRobotsProj
     class Dinosaur
     {
         //member variables
-        string DinoType;
-        int healthLevel;
-        int energyLevel;
-        int attackPower;
-        bool biteAttack;
-        bool clawAttack;
+        public string dinoType;
+        public int healthLevel;
+        public int energyLevel;
+        public int attackPower;
 
         //constructor
-        public Dinosaur(string DinoType, int healthLevel, int energyLevel)
+        public Dinosaur()
         {
-            this.DinoType = DinoType;
-            this.healthLevel = healthLevel;
-            this.energyLevel = energyLevel;
-
+            dinoType = "Velociraptor";
+            healthLevel = 100;
+            energyLevel = 100;
+            attackPower = 60;
         }
-
-        //member methods
-        public void Attack()
-        {
-            //was not sure if I need to put in a "true" statement for the attack.
-            biteAttack = true;
-            clawAttack = true;
-        }
-
-
     }
 }
