@@ -14,7 +14,7 @@ namespace DinosaursVSRobotsProj
         //constructor
         public Robot(string robotName)
         {
-            robotName = "Destroyer"; 
+            this.robotName = robotName; 
         }
     }
 }

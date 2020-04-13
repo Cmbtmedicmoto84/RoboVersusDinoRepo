@@ -14,7 +14,7 @@ namespace DinosaursVSRobotsProj
         //constructor
         public Dinosaur(string dinoType)
         {
-            dinoType = "Velociraptor";
+            this.dinoType = dinoType;
         }
     }
 }

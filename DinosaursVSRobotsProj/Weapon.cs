@@ -9,17 +9,12 @@ namespace DinosaursVSRobotsProj
     class Weapon
     {
         //member variables
-        //public string weaponType;
-        //public int attackPower;
-        public string weapon;
+        public string weaponName;
 
         //constructor
-        public Weapon(string weapon)
+        public Weapon(string weaponName)
         {
-            //weaponType = "2H";
-            weapon = "Two Handed Sword";
+            this.weaponName = weaponName;
         }
-
-        //member methods
     }
 }
