@@ -13,42 +13,35 @@ namespace DinosaursVSRobotsProj
         //int health;
         string getWeapon;
         //int powerLevel;
-        Weapon weapon;
+        Weapon weapon = new Weapon();
 
 
         //constructor
-        //public void NamesOf()
-        //{
-        //    NameTheRobot(robotName);
-        //}
-        public string NameTheRobot(string robotName) /*, int health, int powerLevel) */ 
+        public void NameofRobot(string robotName)
         {
-            //health = 100;
-            //powerLevel = 100;
-            string TheRobotName = "Crimson Warrior";
+            this.robotName = robotName;
+            robotName = "Crimson Warrior";
             string result;
-            result = TheRobotName;
+            result = robotName;
             Console.WriteLine("Welcome" + result);
             Console.ReadLine();
-            return TheRobotName;
+            
         }
-        //public string Weapon(string weaponType)
-        //{
-        //    Console.WriteLine("weapon of choice, ");
-        //    return getWeapon;
-        //}
-        
-
-        
-        //public string PrintRobotSpecs(List<string> name)
-        //{
-        //    foreach(string robotName in name)
-        //    {
-        //        Console.WriteLine(name);
-        //    }
-        //}
 
         //member methods
+        //public string NameOfTheRobot()
+        //{
+        //    string result = robotName;
+        //    Console.WriteLine("Welcome" + result);
+        //    return result;
+        //}
+
+        public void RunDemo()
+        {
+
+        }
+       
+        
                 //public void ChooseRobotName()
                 //{
                 //    Console.WriteLine("Please choose your Robot name: ");
