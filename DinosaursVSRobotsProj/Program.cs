@@ -11,7 +11,8 @@ namespace DinosaursVSRobotsProj
         static void Main(string[] args)
         {
             Battlefield battlefieldObject = new Battlefield();
-            battlefieldObject.Run();
+            battlefieldObject.RunBattle();
+            Console.ReadLine();
         }
         
     }

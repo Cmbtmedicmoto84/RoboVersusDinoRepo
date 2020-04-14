@@ -35,7 +35,7 @@ namespace DinosaursVSRobotsProj
 
             foreach (Weapon weapon in weapons)
             {
-                Console.WriteLine("Selected weapon: {weapon.weaponName");
+                Console.WriteLine("Selected weapon: {weapon.weaponName}");
             }
         }
         

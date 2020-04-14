@@ -11,31 +11,56 @@ namespace DinosaursVSRobotsProj
         //member variables
         public string dinoType;
         public string robotName;
-
-
-        //create an attack ability (robot to dino) & (dino to robot)
-        public string DinoAttackHit; //base off attack power
-        public string RobotAttackHit; //base off attack power
-        public string UnsuccessfulDinoHit;
-        public string UnsuccessfulRobotHit;
+        int robotHealth;
+        int dinosaurHealth;
+        Random random = new Random();
 
         //constructor
-        public void Run()
+        public Battlefield()
         {
-
+            robotHealth = 5;
+            dinosaurHealth = 5;
         }
- 
+
 
         ////member methods
-        //public AttackContact()
-        //{
-        //    //amount of damage done
-        //}
+        public int attackRoll()
+        {
+            int turnRoll = random.Next(1, 2);
+            return turnRoll;
+        }
 
-        //public AttackMiss()
-        //{
-        //    //amount of damage done, then minus damage recieved for enemy plus ifelse statement for unsuccessful attack
-        //}
+        public void WhosTurn(int robotRoll, int dinoRoll)
+        {
+            if (robotRoll < dinoRoll)
+            {
+                Console.WriteLine(dinoType + " bites " + robotName + " !!!");
+                robotHealth--;
+            }
+            else if (dinoRoll < robotRoll)
+            {
+                Console.WriteLine(robotName + " slashes" + dinoType + " accross his body!!!");
+                dinosaurHealth--;
+            }
+            else
+            {
+                Console.WriteLine("Attacks were blocked!");
+            }
 
+        }
+
+
+
+
+        public void RunBattle()
+        {
+            while(dinosaurScore > robotScore)
+            {
+                int dinoRoll = attackRoll();
+                int robotRoll = attackRoll();
+                WhosTurn(dinoRoll, robotRoll);
+            }
+        }
+        
     }
 }
