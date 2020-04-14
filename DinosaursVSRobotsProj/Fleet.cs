@@ -25,7 +25,7 @@ namespace DinosaursVSRobotsProj
 
             foreach (Robot robot in robots)
             {
-                Console.WriteLine("Name: {robot.robotName");
+                Console.WriteLine("Name: " + crimson);
             }
 
             Weapon longsword = new Weapon("Long Sword");
@@ -35,7 +35,7 @@ namespace DinosaursVSRobotsProj
 
             foreach (Weapon weapon in weapons)
             {
-                Console.WriteLine("Selected weapon: {weapon.weaponName}");
+                Console.WriteLine("Selected weapon: " + longsword);
             }
         }
         

@@ -9,58 +9,72 @@ namespace DinosaursVSRobotsProj
     class Battlefield
     {
         //member variables
-        public string dinoType;
-        public string robotName;
+        int robotRoll;
+        int dinoRoll;
         int robotHealth;
         int dinosaurHealth;
+        Fleet crimson = new Fleet();
+        Herd raptor = new Herd();
         Random random = new Random();
 
         //constructor
         public Battlefield()
         {
+            string raptor;
+            string crimson;
+            
             robotHealth = 5;
             dinosaurHealth = 5;
         }
 
 
         ////member methods
-        public int attackRoll()
+        public int attackRoll(string roll)
         {
-            int turnRoll = random.Next(1, 2);
+            int turnRoll = random.Next(1, 9);
+            for(int i = 5; i > 0; i--)
+            {
+                if (i == 0)
+                {
+                    Console.WriteLine();
+                }
+            }
             return turnRoll;
         }
 
-        public void WhosTurn(int robotRoll, int dinoRoll)
+        public void whosTurn(string raptor, string crimson)
         {
-            if (robotRoll < dinoRoll)
+            if (dinoRoll > robotRoll)
             {
-                Console.WriteLine(dinoType + " bites " + robotName + " !!!");
+                Console.WriteLine(raptor + " bites " + crimson + " !!!");
                 robotHealth--;
+                return;
             }
             else if (dinoRoll < robotRoll)
             {
-                Console.WriteLine(robotName + " slashes" + dinoType + " accross his body!!!");
+                Console.WriteLine(crimson + " slashes" + raptor + " accross his body!!!");
                 dinosaurHealth--;
+                return;
             }
             else
             {
                 Console.WriteLine("Attacks were blocked!");
             }
-
         }
-
+        
 
 
 
         public void RunBattle()
         {
-            while(dinosaurScore > robotScore)
+            if(dinosaurHealth > 1 && robotHealth > 1)
             {
-                int dinoRoll = attackRoll();
-                int robotRoll = attackRoll();
-                WhosTurn(dinoRoll, robotRoll);
+                return;
+            }
+            else if(dinosaurHealth < 1 && robotHealth < 1)
+            {
+                
             }
         }
-        
     }
 }
